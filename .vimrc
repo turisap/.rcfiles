@@ -19,18 +19,20 @@ Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'othree/yajs.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'jiangmiao/auto-pairs'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'cakebaker/scss-syntax.vim'
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
-Plug 'jiangmiao/auto-pairs'
   
   
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
   
 " Vim-emmet
-let g:user_emmet_leader_key=','
+let g:user_emmet_leader_key='.'
   
 " Color scheme  
 syntax on
@@ -112,6 +114,7 @@ let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 
 " Deoplete settings
 let g:deoplete#enable_at_startup = 1
+call deoplete#custom#option('auto_complete', 'False')
 
 " YATS highlihting
 let g:yats_host_keyword = 1
