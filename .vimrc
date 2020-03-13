@@ -46,6 +46,7 @@ set smartcase
 let mapleader = "\<Space>"
 nmap <leader>s :vsplit<CR>
 nmap <leader>q :wq<CR>
+nmap <leader>bp :b#<CR>
 " imap jj <Esc>
 " cmap <Esc> <C-\><C-n>
 
