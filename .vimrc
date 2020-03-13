@@ -44,8 +44,11 @@ set smartcase
 
 " mappings
 let mapleader = "\<Space>"
+nmap <leader>s :vsplit<CR>
+nmap <leader>q :wq<CR>
 " imap jj <Esc>
 " cmap <Esc> <C-\><C-n>
+
 
 " reload vim config
 nmap <leader>rl :source ~/.vimrc<CR>
@@ -124,6 +127,9 @@ let g:ale_sign_error = '>>'
 let g:ale_sign_warning = '??'
 let g:ale_fix_on_save = 1
 let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
+let g:ale_set_signs = 1
+let g:ale_set_highlights = 0
+
 
 " deoplete settings
 let g:deoplete#enable_at_startup = 1
@@ -131,34 +137,6 @@ call deoplete#custom#option('auto_complete', 'False')
 
 " yats highlihting
 let g:yats_host_keyword = 1
-
-
-" denite config
-" !!!!! For this search to work you need to install the_silver_searcher
-" call denite#custom#var('file/rec', 'command', ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])
-" call denite#custom#option('default', 'prompt', 'λ')
-" call denite#custom#var('grep', 'command', ['ag'])
-" call denite#custom#var('grep', 'default_opts', ['-i', '--vimgrep'])
-" call denite#custom#var('grep', 'recursive_opts', [])
-" call denite#custom#var('grep', 'pattern_opt', [])
-" call denite#custom#var('grep', 'separator', ['--'])
-" call denite#custom#var('grep', 'final_opts', [])
-
-" nmap <silent><buffer><expr> <CR> denite#do_map('do_action')
-" " nmap <silent><buffer><expr> d denite#do_map('do_action', 'delete')
-" " nmap <silent><buffer><expr> p denite#do_map('do_action', 'preview')
-" nmap <silent><buffer><expr> <C-v> denite#do_map('do_action', 'vsplit')
-" nmap <silent><buffer><expr> <C-x> denite#do_map('do_action', 'split')
-" nmap <silent><buffer><expr> <Esc> denite#do_map('quit')
-" " nmap <silent><buffer><expr> i denite#do_map('open_filter_buffer')
-" nmap <silent><buffer><expr> <Space> denite#do_map('toggle_select').'j'
-" nnoremap <silent><buffer><expr> q denite#do_map('quit')
-
-
-" nmap <leader>pp :Denite -start-filter file/rec<CR>
-" nmap <leader>pb :Denite buffer<CR>
-" nmap <leader>pg :Denite grep<CR>
-
 
 " vim hardtime
 let g:hardtime_showmsg = 1
