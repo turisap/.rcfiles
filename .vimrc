@@ -47,6 +47,10 @@ let mapleader = "\<Space>"
 nmap <leader>s :vsplit<CR>
 nmap <leader>q :wq<CR>
 nmap <leader>bp :b#<CR>
+nmap <leader>n :tabn<CR>
+nmap <leader>p :tabp<CR>
+nmap <leader>h <C-w>h
+nmap <leader>l <C-w>l
 " imap jj <Esc>
 " cmap <Esc> <C-\><C-n>
 
