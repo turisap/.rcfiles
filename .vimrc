@@ -29,7 +29,7 @@ Plug 'roxma/vim-hug-neovim-rpc'
 call plug#end()
   
 " vim-emmet
-let g:user_emmet_leader_key='.'
+let g:user_emmet_leader_key=','
   
 syntax on
 let g:oceanic_next_terminal_bold = 1
@@ -51,6 +51,7 @@ nmap <leader>n :tabn<CR>
 nmap <leader>p :tabp<CR>
 nmap <leader>h <C-w>h
 nmap <leader>l <C-w>l
+nmap <leader>w :wall<CR>
 " imap jj <Esc>
 " cmap <Esc> <C-\><C-n>
 
