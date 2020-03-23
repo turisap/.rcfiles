@@ -23,9 +23,6 @@ Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
-" Plug 'Shougo/denite.nvim'
-" Plug 'rking/ag.vim'
-" list ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
 " vim-emmet
@@ -39,8 +36,12 @@ colorscheme OceanicNext
 " General
 set number
 set modifiable
+
+" search for all cases if input is lowercase and for exact case if another
 set ignorecase
 set smartcase
+
+" gives tips if <Tab> pressed in command mode
 set wildmenu
 
 " mappings
@@ -71,6 +72,9 @@ nmap <leader>wc <C-w>c
 
 " quitting insert mode
 imap jj <Esc>
+
+" clear highlights for search results
+noremap <leader>c :set hlsearch! hlsearch?<CR>
 
 " editing
 nmap <leader>rr :redo<CR>
