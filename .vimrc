@@ -23,6 +23,7 @@ Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'djoshea/vim-autoread'
 call plug#end()
 
 " vim-emmet
