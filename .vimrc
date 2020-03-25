@@ -82,6 +82,9 @@ nmap <leader>rr :redo<CR>
 " reload vim config
 nmap <leader>rl :source ~/.vimrc<CR>
 
+" rebuild helptags (vim should be launced with sudo)
+nmap <leader>tgh :helptags $VIMRUNTIME/doc<CR>
+
 " nerdtree
 nmap <C-n> :NERDTreeToggle<CR>
 
