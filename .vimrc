@@ -23,6 +23,7 @@ Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'djoshea/vim-autoread'
 call plug#end()
 
 " vim-emmet
@@ -63,6 +64,12 @@ nmap <leader>bn :bnext<CR>
 nmap <leader>tt :tabnew<CR>
 map <leader>tn :tabn<CR>
 map <leader>tp :tabp<CR>
+
+" addding and removing empty lines
+nnoremap <leader>ed :set paste<CR>m`o<Esc>``:set nopaste<CR>
+nnoremap <leader>eu :set paste<CR>m`O<Esc>``:set nopaste<CR>
+nnoremap <leader>dd m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
+nnoremap <leader>du m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
 
 " windows navigation
 nmap <leader>h <C-w>h
