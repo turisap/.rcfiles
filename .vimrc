@@ -56,11 +56,11 @@ nmap <leader>q :wq<CR>
 nmap <leader>w :wall<CR>
 
 " buffers navigation
+nmap <leader>bn :bnext<CR>
 nmap <leader>bb :b#<CR>
 nmap <leader>bp :bprevious<CR>
 
 " tabs navigation
-nmap <leader>bn :bnext<CR>
 nmap <leader>tt :tabnew<CR>
 map <leader>tn :tabn<CR>
 map <leader>tp :tabp<CR>
