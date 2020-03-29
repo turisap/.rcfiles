@@ -25,6 +25,9 @@ Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'djoshea/vim-autoread'
 call plug#end()
+" come here https://github.com/tpope/vim-commentary to install plugin for
+" comments shortcuts
+
 
 " vim-emmet
 let g:user_emmet_leader_key=','
