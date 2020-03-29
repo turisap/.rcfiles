@@ -6,3 +6,6 @@ configuration for Vim editor
 2. open vim and run `:PlugInstall` to install plugins
 3. you will possibly need to download a color theme (there will be a warning in this case)
 4. restart vim
+
+# requirements
+1. you have to have `typescript` installed globally for linting js
