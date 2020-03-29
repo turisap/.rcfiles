@@ -9,5 +9,5 @@ configuration for Vim editor
 
 # requirements
 1. install `typescript` installed globally for linting js
-2  install `commentary` plugin separatelycome here [commentary](https://github.com/tpope/vim-commentary)
-3  install  `prettier` globbaly to fix code via `ALE`
+2.  install `commentary` plugin separatelycome here [commentary](https://github.com/tpope/vim-commentary)
+3.  install  `prettier` globbaly to fix code via `ALE`
