@@ -8,4 +8,6 @@ configuration for Vim editor
 4. restart vim
 
 # requirements
-1. you have to have `typescript` installed globally for linting js
+1. install `typescript` installed globally for linting js
+2  install `commentary` plugin separatelycome here [commentary](https://github.com/tpope/vim-commentary)
+3  install  `prettier` globbaly to fix code via `ALE`
