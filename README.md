@@ -10,5 +10,5 @@ configuration for Vim editor
 # requirements
 1. install `typescript` installed globally for linting js
 2. install `commentary` plugin manualy here [commentary](https://github.com/tpope/vim-commentary)
-3. install `MatchTag` plugin manually (here)[https://www.vim.org/scripts/script.php?script_id=3818]
+3. install `MatchTag` plugin manually [here](https://www.vim.org/scripts/script.php?script_id=3818)
 3. install  `prettier` globbaly to fix code via `ALE`
