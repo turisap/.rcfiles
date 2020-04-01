@@ -6,6 +6,7 @@ configuration for Vim editor
 2. open vim and run `:PlugInstall` to install plugins
 3. you will possibly need to download a color theme (there will be a warning in this case)
 4. restart vim
+5. you can link `.vimrc` from this repo using `ln -s` to your `~/.vimrc` to avoid copy pasting from one file to another
 
 # requirements
 1. install `typescript` installed globally for linting js
