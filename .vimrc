@@ -38,6 +38,8 @@ colorscheme OceanicNext
 " General
 set number
 set modifiable
+set autoindent
+set shiftwidth=2
 
 " search for all cases if input is lowercase and for exact case if another
 set ignorecase
