@@ -7,7 +7,6 @@ Plug 'leafgarland/typescript-vim'
 Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdtree'
 Plug 'mhartington/oceanic-next'
-Plug 'ryanoasis/vim-devicons'
 Plug 'dense-analysis/ale'
 Plug 'w0rp/ale'
 Plug 'Shougo/deoplete.nvim'
@@ -24,6 +23,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'djoshea/vim-autoread'
+Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()
 
 
@@ -35,9 +35,11 @@ let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
 colorscheme OceanicNext
 
-" General
+" general
 set number
 set modifiable
+
+" indent
 set autoindent
 set shiftwidth=2
 
@@ -53,6 +55,9 @@ let mapleader = "\<Space>"
 
 " splitting window
 nmap <leader>s :vsplit<CR>
+
+" files importing path suggesstion
+imap <leader>fs <C-x><C-f>
 
 " writing all and qutting
 nmap <leader>q :wq<CR>
@@ -188,7 +193,7 @@ let g:yats_host_keyword = 1
 
 " vim hardtime
 let g:hardtime_showmsg = 1
-let g:hardtime_maxcount = 2
+let g:hardtime_maxcount = 5
 let g:hardtime_default_on = 1
 let g:hardtime_ignore_buffer_patterns = [ "NERD*" , "denite*"]
 
