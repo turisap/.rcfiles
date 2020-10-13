@@ -78,6 +78,8 @@ nmap <leader>bp :bprevious<CR>
 nmap <leader>tt :tabnew<CR>
 map <leader>tn :tabn<CR>
 map <leader>tp :tabp<CR>
+map <leader>tc :tabclose<CR>
+map <leader>cc ZZ
 
 " addding and removing empty lines
 nnoremap <leader>ed :set paste<CR>m`o<Esc>``:set nopaste<CR>
@@ -88,6 +90,8 @@ nnoremap <leader>du m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
 " windows navigation
 nmap <leader>h <C-w>h
 nmap <leader>l <C-w>l
+nmap <leader>j <C-w>j
+nmap <leader>k <C-w>k
 nmap <leader>wo <C-w>o
 nmap <leader>wc <C-w>c
 
