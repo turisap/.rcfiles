@@ -1,15 +1,19 @@
 call plug#begin("~/.vim/plugged")
-Plug 'dracula/vim'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'airblade/vim-gitgutter'
 let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'takac/vim-hardtime'
 Plug 'jiangmiao/auto-pairs'
+Plug 'HerringtonDarkholme/yats.vim' 
+Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " INSTALL PRETTIER EXTENSION FOR COC-NVIM TO FORMAT STYLES https://github.com/neoclide/coc-prettier
 " INSTALL COCNVIM CODE SNIPPETS https://github.com/neoclide/coc-snippets
 call plug#end()
@@ -19,6 +23,8 @@ call plug#end()
 "general
 set number
 set modifiable
+
+colorscheme gruvbox
 
 " indent
 set autoindent
@@ -95,6 +101,11 @@ nmap <leader>ht :HardTimeToggle<CR>
 
 " fzf
 map <leader>; :Files<CR>
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-s': 'split',
+  \ 'ctrl-v': 'vsplit'
+  \}
 
 
 let g:NERDTreeShowHidden = 1
@@ -106,14 +117,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Toggle
 nnoremap <silent><C-b> :NERDTreeToggle<CR>
 
-" fzf finder mappings
-nnoremap <leader>; :FZF<CR>
-let g:fzf_action = {
-  \ 'ctrl-t': 'tab split',
-  \ 'ctrl-s': 'split',
-  \ 'ctrl-v': 'vsplit'
-  \}
-let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
 
 " hard time config
 let g:hardtime_default_on = 1
@@ -164,6 +168,11 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+" inoremap <expr> <leader><leader> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" Remap for rename current word
+nmap <F2> <Plug>(coc-rename)
 
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
