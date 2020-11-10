@@ -16,6 +16,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " INSTALL PRETTIER EXTENSION FOR COC-NVIM TO FORMAT STYLES https://github.com/neoclide/coc-prettier
 " INSTALL COCNVIM CODE SNIPPETS https://github.com/neoclide/coc-snippets
+" INSTALL COC-YAML 
 call plug#end()
 
 " Config Section
