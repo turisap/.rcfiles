@@ -1,5 +1,5 @@
 # vimrc
-configuration for Vim editor
+configuration for the Vim editor
 
 # usage
 1. install `vim-plug` plugin manager for vim
