@@ -108,6 +108,8 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit'
   \}
 
+" prepend the current line (insert text at the start)
+nmap <leader>tt _i
 
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
