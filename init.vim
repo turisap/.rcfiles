@@ -111,6 +111,9 @@ let g:fzf_action = {
 " prepend the current line (insert text at the start)
 nmap <leader>tt _i
 
+" jump to a matching bracket
+nmap <leader>mm
+
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
