@@ -112,7 +112,7 @@ let g:fzf_action = {
 nmap <leader>tt _i
 
 " jump to a matching bracket
-nmap <leader>mm
+nmap <leader>mm %
 
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
