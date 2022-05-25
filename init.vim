@@ -100,6 +100,10 @@ nmap <leader>pc :PlugClean<CR>
 " hardtime on / off
 nmap <leader>ht :HardTimeToggle<CR>
 
+" move one line up and insert
+imap <leader>u <C-G>k
+imap <leader>d <C-G>j
+
 " fzf
 map <leader>; :Files<CR>
 let g:fzf_action = {
